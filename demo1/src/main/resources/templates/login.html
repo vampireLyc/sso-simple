@@ -1,0 +1,20 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <form action="/demo1/login" method="post">
+            <input type="hidden" name="url" th:value="${url}" />
+            <span>username:</span><input type="text" name="name" />
+            <span>password:</span><input type="text" name="password" />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+</div>
+</body>
+</html>
